@@ -71,6 +71,10 @@ nav_external_links:
     hide_icon: false 
     opens_in_new_tab: true 
 
+
+# For copy button on code
+enable_copy_code_button: true
+
 callouts_level: quiet # or loud
 callouts:
   highlight:
