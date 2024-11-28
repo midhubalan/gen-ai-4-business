@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Technical Foundations of Generative AI for Business
+description: Course site for Technical Foundations of Generative AI for Business
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://midhubalan.github.io/gen-ai-4-business/
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
