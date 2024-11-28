@@ -41,6 +41,12 @@ search:
   button: false
   # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
   focus_shortcut_key: 'k'
+
+mermaid:
+  # Version of mermaid library - last updates: 2024-11-27
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.4.1"
+
 # External navigation links
 nav_external_links:
   - title: Pitt Canvas
