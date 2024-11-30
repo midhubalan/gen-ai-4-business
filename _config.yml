@@ -147,3 +147,18 @@ callouts:
     title: Warning
     color: red
 
+# collections
+collections:
+  course_modules:
+    output: true
+  git_github:
+    output: true 
+
+just_the_docs:
+  collections:
+    course_modules:
+      name: 'Course Modules'
+      # nav_fold: true
+    git_github:
+      name: 'Git & Github'
+      nav_fold: true
