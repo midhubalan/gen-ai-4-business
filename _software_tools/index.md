@@ -54,7 +54,7 @@ A terminal program (also known as a terminal emulator or command-line interface)
 
 Here's how to access the terminal on different operating systems:
 
-* **Windows:** Search for "Windows Terminal" in the Start Menu. If it is not pre-installed on your computer follow instructions from [here](https://learn.microsoft.com/en-us/windows/terminal/install)
+* **Windows:** Search for "Windows Terminal" in the Start Menu. If it is not pre-installed on your computer follow instructions from [➡️ here](https://learn.microsoft.com/en-us/windows/terminal/install)
 * **macOS:** Open the "Terminal" application found in the Utilities folder within Applications.
 * **Chrome OS:** Open the terminal application by searching for "Terminal" in the launcher.
 
@@ -78,9 +78,9 @@ This course primarily uses the Bash shell. While Zsh is also common, the differe
 {: .new-title}
 > To-do
 >
-> If you are on Windows, enable Windows Subsystem for Linux (WSL) to install a Linux distribution like Ubuntu using instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install). 
+> If you are on Windows, enable Windows Subsystem for Linux (WSL) to install a Linux distribution like Ubuntu using instructions [➡️ here](https://learn.microsoft.com/en-us/windows/wsl/install). 
 >
-> If you are on Chrome OS, follow instructions from [here](https://support.google.com/chromebook/answer/9145439) to enable Linux and access Bash from Terminal.
+> If you are on Chrome OS, follow instructions from [➡️ here](https://support.google.com/chromebook/answer/9145439) to enable Linux and access Bash from Terminal.
 
 # Git
 Imagine Git as a time machine for your code, but with superpowers! Instead of saving countless versions of your files like "my_app_v1," "my_app_final," "my_app_really_final," Git tracks every single change you make. 
@@ -100,7 +100,7 @@ Essentially, Git acts as a safety net, allowing you to experiment freely, collab
 >**Installing Git**
 >
 > 1. **Check for Git:** Open your terminal and type `git --version`. If Git is already installed, you'll see its version number.
-> 1. **Install if needed:** If Git isn't installed, download it from the official website [here](https://git-scm.com/downloads) and follow the installation instructions for your operating system.
+> 1. **Install if needed:** If Git isn't installed, download it from the official website [➡️ here](https://git-scm.com/downloads) and follow the installation instructions for your operating system.
 
 # uv
 Imagine you're baking a cake. You wouldn't just throw all the ingredients together without measuring, right?  `uv` helps you do the same for your Python projects. It ensures you have the right "ingredients" (Python packages) and the right "amounts" (versions) so your code works correctly every time.
@@ -119,7 +119,7 @@ Think of `uv` as a recipe book and ingredient list for your Python projects, kee
 >
 > **Installing `uv`**
 > To install `uv`, follow these simple steps:
-> 1. **macOS/Linux:** Visit the official documentation [here](https://docs.astral.sh/uv/getting-started/installation/) and follow the instructions.
+> 1. **macOS/Linux:** Visit the official documentation [➡️ here](https://docs.astral.sh/uv/getting-started/installation/) and follow the instructions.
 > 1. **Windows:**  Use your Bash shell within WSL and follow the Linux installation instructions from the link above.
 
 # Visual Studio Code
@@ -139,12 +139,72 @@ Here's why we recommend VS Code:
 >
 > To install VS Code, follow these simple steps:
 >
-> 1. **Download:** Visit the official VS Code website [here](https://code.visualstudio.com/Download) and download the installer for your operating system.
+> 1. **Download:** Visit the official VS Code website [➡️ here](https://code.visualstudio.com/Download) and download the installer for your operating system.
 > 1. **Install:** Run the downloaded installer and follow the on-screen instructions.
 
 VS Code's flexibility and extensive features make it the ideal code editor for this course, enabling you to write, test, and manage your generative AI projects with ease.
 
 # Github
+GitHub is like a central hub for all things code. It's where you'll store your project's source code, collaborate with your teammates, and manage your project's development. Think of it as a combination of Google Drive (for storing code), a project management tool (for organizing tasks), and a social media platform (for developers to connect and share ideas).
+
+In this course, you'll use GitHub to:
+
+* **Store and manage your code:** Keep your code organized and accessible.
+* **Collaborate with your team:** Work together on code, share ideas, and review each other's contributions.
+* **Plan and track your work:**  Clearly define tasks, assign responsibilities, and monitor progress.
+* **Showcase your contributions:** Demonstrate your individual contributions to the project.
+
+GitHub provides a centralized and transparent platform for your project development, facilitating collaboration, organization, and progress tracking.
+
+To get the most out of GitHub in this course, be sure to explore these key features:
+
+* **Issues:** Use issues to track tasks, brainstorm ideas, and discuss solutions with your team.
+* **Discussions:** Engage in conversations with your group and instructor, ask questions, and share insights.
+* **Wikis:** Create a knowledge base for your project, documenting decisions, resources, and progress.
+* **Pull Requests:**  Submit your code changes for review and merge them into the main project.
+* **GitHub-Flavored Markdown:** Learn this simple markup language to format your text and code in issues, discussions, and wikis.
+
+These GitHub features are designed to enhance your collaboration and project management. Explore how generative AI can assist you within these features – from brainstorming ideas and generating code to documenting your progress. This hands-on experience will demonstrate the power of AI assistants for task execution.
+
+{: .new-title }
+> To-do
+>
+>**Get Started with GitHub:**
+>
+>1. **Sign Up:** If you don't already have a GitHub account, create one [➡️ here](https://github.com/signup).
+>1. **Embrace the CLI:**  While GitHub offers a web interface, we'll be primarily using the `gh` command-line tool. Why? Because the CLI offers greater flexibility, automation, and integrates seamlessly with AI-powered tools. Imagine generating code, managing tasks, and collaborating with your team, all from your terminal!
+>1. **Install `gh`:**  Follow the instructions [➡️ here](https://github.com/cli/cli#installation) to install the GitHub CLI client on your system.
 
 # Google Cloud Platform
 # Starship
+Imagine having a heads-up display for your terminal, showing you all the essential information about your project at a glance. That's Starship! This powerful tool enhances your command-line experience by providing a customizable and informative prompt.
+
+Starship displays:
+
+* **Location:**  Where you are in your file system.
+* **Git Status:** Which branch you're on and if there are any uncommitted changes.
+* **Cloud Connection:**  The cloud account you're using (e.g., GCP).
+* **Configuration:** Key settings like your current cloud region.
+* **Programming Language:** The version of Python or other languages used in your project.
+
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  {{ myimage.path }}
+{% endfor %}
+
+![screen shot of terminal with starship prompt](/assets/img/nerd-font-symbols.png)
+
+{: .text-right .fs-3 }
+**Image credit:** starship.rs 
+
+
+With Starship, you'll always have the critical context for your project right in your terminal, making your workflow smoother and more efficient.
+
+{: .new-title}
+> To-do
+>
+>**Installing Starship**
+>
+>To install Starship🚀 and transform your terminal experience, follow the instructions on the official Starship website:
+>
+>[➡️ Install Starship](https://starship.rs/guide/) 

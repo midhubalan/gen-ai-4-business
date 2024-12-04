@@ -2,7 +2,8 @@ title: Technical Foundations of Generative AI for Business
 description: Course site for Technical Foundations of Generative AI for Business
 theme: just-the-docs
 
-url: https://midhubalan.github.io/gen-ai-4-business/
+url: https://midhubalan.github.io/gen-ai-4-business
+baseurl: /
 
 defaults:
   - scope:
@@ -10,6 +11,10 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: "assets/img"
+    values: 
+      image: true
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
