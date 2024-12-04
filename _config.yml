@@ -138,7 +138,7 @@ callouts:
     title: Important
     color: blue
   new:
-    title: New
+    title: To-do
     color: green
   note:
     title: Note
@@ -151,7 +151,7 @@ callouts:
 collections:
   course_modules:
     output: true
-  git_github:
+  software_tools:
     output: true 
 
 just_the_docs:
@@ -159,6 +159,6 @@ just_the_docs:
     course_modules:
       name: 'Course Modules'
       # nav_fold: true
-    git_github:
-      name: 'Git & Github'
-      nav_fold: true
+    software_tools:
+      name: 'Software Tools'
+      # nav_fold: true
