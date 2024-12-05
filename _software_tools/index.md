@@ -176,8 +176,77 @@ These GitHub features are designed to enhance your collaboration and project man
 >1. **Install `gh`:**  Follow the instructions [➡️ here](https://github.com/cli/cli#installation) to install the GitHub CLI client on your system.
 
 # Google Cloud Platform
+Public clouds like Google Cloud Platform (GCP) provide essential resources for learning and working with generative AI:
+
+* **Accessibility:**  You can access powerful hardware (GPUs/TPUs) and software tools without upfront investment.
+* **Scalability:** Easily adjust your computing resources as your AI projects grow.
+* **Pre-trained models:** Experiment with cutting-edge AI models readily available on the cloud.
+* **Cost-effectiveness:** Pay only for the resources you use, making experimentation more affordable. 
+
+By leveraging a public cloud, you gain hands-on experience with the infrastructure and tools used to develop and deploy real-world generative AI applications.
+
+Think of the public cloud like renting access to powerful computers, storage, and software over the internet. Instead of buying and maintaining your own hardware, you can tap into these resources on-demand, similar to how you use Google Docs or Office 365 without managing the physical servers they run on.
+
+In this course, we'll be using Google Cloud Platform (GCP), one of the leading public cloud providers. You'll leverage GCP's services to:
+
+* **Build your AI application:** Use Vertex AI to access different foundational models, experiment with prompt design, try out generative AI orchestration, and more.
+* **Host your application:** Deploy your application on Cloud Run, making it accessible to your peers for review and feedback.
+* **Manage your cloud resources:** Utilize services like IAM for access control, billing management to track costs, and logging/monitoring to understand your application's performance and resource usage.
+
+**Important Cloud Considerations:**
+
+As you begin your generative AI and cloud journey, it's crucial to be mindful of:
+
+* **Billing:** Cloud services are billed based on usage. Leaving resources running unnecessarily can lead to unexpected costs. Always remember to shut down or delete resources when you're not using them.
+* **Security:** Protect your cloud account and data by following security best practices. Never share your API keys or account credentials publicly (including on GitHub) and ensure proper authentication for your applications and storage.
+
+By understanding these core concepts and practicing responsible cloud usage, you'll be well-equipped to harness the power of GCP for your generative AI projects.
+
+{: .new-title}
+> To-do
+>
+>**Accessing Google Cloud Platform**
+> 
+> To get started with GCP, sign up for a free account:
+> 
+> 1. **Visit the GCP website:** Go to [cloud.google.com](https://cloud.google.com/).
+> 1. **Sign up for a Free Trial:**  You'll receive $300 in credit to explore GCP's services. 
+> 1. **Important Notes:**
+>     * You'll need to provide billing information, but you won't be charged unless you exceed the free credits or continue using paid services after the trial.
+>     * Be sure to set up budget alerts to avoid any unexpected charges.
+>
+> **Getting Started with `gcloud`**
+> 
+> The `gcloud` command-line tool lets you manage your Google Cloud resources. Here's how to get started:
+> 
+> 1. **Install the Google Cloud SDK:**  This includes the `gcloud` tool.  Follow the instructions [here](https://cloud.google.com/sdk/docs/install).
+> 
+> 1. **Initialize `gcloud`:** Open your terminal and run: 
+>    ```bash
+>    gcloud init
+>    ```
+>    Follow the prompts to link `gcloud` to your Google Cloud account.
+> 
+> 1. **Authorize `gcloud` (if needed):** If you're using `gcloud` on a new machine or have multiple Google accounts, you might need to authorize it. Run:
+>    ```bash
+>    gcloud auth login
+>    ```
+>    This will open a browser window for you to sign in to your Google Cloud account.
+> 
+> That's it! You're ready to use `gcloud` to interact with Google Cloud.
+
+
+With your GCP account, you'll have access to the powerful tools and services you need to build and deploy your generative AI applications.
+
+
+
 # Starship
 Imagine having a heads-up display for your terminal, showing you all the essential information about your project at a glance. That's Starship! This powerful tool enhances your command-line experience by providing a customizable and informative prompt.
+
+![screen shot of terminal with starship prompt](/assets/img/nerd-font-symbols.png)
+
+{: .text-right .fs-3 }
+**Image credit:** starship.rs 
 
 Starship displays:
 
@@ -186,17 +255,6 @@ Starship displays:
 * **Cloud Connection:**  The cloud account you're using (e.g., GCP).
 * **Configuration:** Key settings like your current cloud region.
 * **Programming Language:** The version of Python or other languages used in your project.
-
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.path }}
-{% endfor %}
-
-![screen shot of terminal with starship prompt](/assets/img/nerd-font-symbols.png)
-
-{: .text-right .fs-3 }
-**Image credit:** starship.rs 
-
 
 With Starship, you'll always have the critical context for your project right in your terminal, making your workflow smoother and more efficient.
 
